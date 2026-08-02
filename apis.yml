@@ -1,8 +1,25 @@
 aid: zhongan-insurance
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zhongan-insurance.png
 name: ZhongAn Insurance
-description: 'ZhongAn Insurance is a company surfaced as a portfolio company of softbank-vision-fund and
-  added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'ZhongAn Online P&C Insurance Co., Ltd. is China''s first online-only insurance company,
+  founded in 2013 by Ant Financial, Tencent, and Ping An and listed on the Hong Kong Stock Exchange
+  (6060) in 2017. Headquartered in Shanghai, ZhongAn sells digital insurance across health, consumer
+  finance, auto, and lifestyle lines entirely through internet channels, and operates a partner
+  "open platform" (open.zhongan.com) plus a technology arm, ZhongAn Technology (zhongan.io), that
+  offers insurtech and cloud services. ZhongAn does not publish a self-serve public developer API
+  program or OpenAPI documentation; integration is partner/ecosystem-driven. This profile was
+  surfaced as a portfolio company of softbank-vision-fund and enriched by the API Evangelist pipeline.'
 url: https://raw.githubusercontent.com/api-evangelist/zhongan-insurance/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Insurance
+- Insurtech
+- Digital Insurance
+- China
 apis: []
+common:
+- type: DomainSecurity
+  url: security/zhongan-insurance-domain-security.yml
+- type: Website
+  url: https://www.zhongan.com
+- type: Portal
+  url: https://open.zhongan.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
